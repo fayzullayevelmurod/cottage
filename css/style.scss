@@ -128,7 +128,6 @@ label {
         width: 100%;
         height: 100%;
         position: absolute;
-        object-fit: cover;
         top: 0;
         left: 0;
         z-index: -1;
@@ -221,13 +220,23 @@ header {
 
 // accordion
 .accordion_main {
+
     padding: 250px 0;
-    background-image: url('../images/accordion_bg.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    object-fit: cover;
+    // background-image: url('../images/accordion_bg.png');
+    // background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    // object-fit: cover;
+
+    .accordion_bg {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
     
     .accordion {    
+        max-width: 1070px;
+        margin: 0 auto;
         padding-top: 280px;
         position: relative;
         display: flex;
@@ -297,3 +306,27 @@ header {
       
 }
 // accordion
+
+// cards
+.cards {
+    .main_container {
+        display: flex;
+        align-items: center;
+    }
+
+    .img_card {
+        gap: 20px;
+
+        h6 {
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            line-height: 1.2; 
+        }
+    }
+
+    .img_card_center {
+        padding-top: 100px;
+    }
+}
+// cards
