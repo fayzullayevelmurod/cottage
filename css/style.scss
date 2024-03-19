@@ -122,11 +122,17 @@ label {
 
 // main
 .main {
-    height: 100vh;
-    background-image: url('../images/home_bg.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    // background-position: center;
+    height: 120vh;
+
+    .home_bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
 }
 // main
 
@@ -189,7 +195,105 @@ header {
 .home {
     left: 0;
     right: 0;
-    bottom: 50px;
+    bottom: 200px;
     margin: 0 auto; 
 }
 // home
+
+// home_under
+.home_under {
+    .home_under_card {
+        gap: 50px;
+
+        h6 {
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            line-height: 1.2;
+        }
+    }
+
+    .home_under_center {
+        transform: translateY(100px);
+    }
+}
+// home_under
+
+// accordion
+.accordion_main {
+    padding: 250px 0;
+    background-image: url('../images/accordion_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    
+    .accordion {    
+        padding-top: 280px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+      
+    .accordion-item {
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.21);
+    }
+      
+    .accordion-item-header {
+        padding: 30px 40px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        font-size: 36px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 1.2;
+    }
+      
+    .accordion-item-header::after {
+        color: #2372BBFF;
+        content: "\002B";
+        font-size: 45px;
+        position: absolute;
+        right: 40px;
+        border-radius: 15px;
+    }
+      
+    .accordion-item-header.active::after {
+        content: "\2212";
+        border-radius: 15px;
+    }
+      
+    .accordion-item-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+
+        ul {
+            padding: 0px 40px 40px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+
+            li {
+                list-style-position: inside;
+                list-style-type: disc;
+                font-size: 24px;
+                color: #000;
+                font-weight: bold;
+                line-height: 1.2;
+            }
+        }
+    }
+      
+    .accordion-item-body-content {
+        padding: 1rem;
+        line-height: 1.5rem;
+    }
+      
+}
+// accordion

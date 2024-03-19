@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -89,10 +90,17 @@ label {
 }
 
 .main {
-  height: 100vh;
-  background-image: url("../images/home_bg.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  height: 120vh;
+}
+.main .home_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 header {
@@ -146,6 +154,87 @@ header .header_contact svg {
 .home {
   left: 0;
   right: 0;
-  bottom: 50px;
+  bottom: 200px;
   margin: 0 auto;
+}
+
+.home_under .home_under_card {
+  gap: 50px;
+}
+.home_under .home_under_card h6 {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+}
+.home_under .home_under_center {
+  transform: translateY(100px);
+}
+
+.accordion_main {
+  padding: 250px 0;
+  background-image: url("../images/accordion_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.accordion_main .accordion {
+  padding-top: 280px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.accordion_main .accordion-item {
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.21);
+}
+.accordion_main .accordion-item-header {
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  font-size: 36px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+}
+.accordion_main .accordion-item-header::after {
+  color: #2372bb;
+  content: "+";
+  font-size: 45px;
+  position: absolute;
+  right: 40px;
+  border-radius: 15px;
+}
+.accordion_main .accordion-item-header.active::after {
+  content: "−";
+  border-radius: 15px;
+}
+.accordion_main .accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion_main .accordion-item-body ul {
+  padding: 0px 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.accordion_main .accordion-item-body ul li {
+  list-style-position: inside;
+  list-style-type: disc;
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.accordion_main .accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
