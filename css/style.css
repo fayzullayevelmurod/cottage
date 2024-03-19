@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+  display: inline-block;
+}
+
+a:hover {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+span, label {
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Gilroy", sans-serif !important;
+  font-style: normal;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  outline: 0 !important;
+}
+
+address {
+  font-style: normal;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper.home .main_container {
+  max-width: 1440px;
+  padding: 0 40px;
+}
+
+.container_wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+label {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.main_container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.full_container {
+  max-width: 1800px;
+}
+
+.main {
+  height: 100vh;
+  background-image: url("../images/home_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header {
+  padding-top: 40px;
+}
+header .main_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_social_media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .header_social_media svg {
+  font-size: 25px;
+  color: rgb(35, 114, 187);
+}
+header .header_social_media button {
+  padding: 12px 50px;
+  border-radius: 100px;
+  border: 1px solid rgb(35, 114, 187);
+  margin-left: 5px;
+  font-size: 16px;
+  color: rgb(35, 114, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+header .header_logo h6 {
+  font-size: 30px;
+  color: rgb(35, 114, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+header .header_contact {
+  font-size: 32px;
+  color: rgb(35, 114, 187);
+  line-height: 0.506;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .header_contact svg {
+  font-size: 25px;
+}
+
+.home {
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
