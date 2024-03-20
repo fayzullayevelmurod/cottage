@@ -1,3 +1,10 @@
+var swiper = new Swiper(".cardsSwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 
 // accordion
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
