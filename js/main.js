@@ -1,5 +1,6 @@
 let swiper = new Swiper(".cardsSwiper", {
   spaceBetween: 20,
+  loop: true,
   navigation: {
     nextEl: ".card-button-next",
     prevEl: ".card-button-prev",
@@ -8,9 +9,19 @@ let swiper = new Swiper(".cardsSwiper", {
 
 let swiper2 = new Swiper(".commentSwiper", {
   spaceBetween: 20,
+  loop: true,
   navigation: {
     nextEl: ".comment-button-next",
     prevEl: ".comment-button-prev",
+  },
+});
+
+let swiper3 = new Swiper(".gallerySwiper", {
+  spaceBetween: 20,
+  loop: true,
+  navigation: {
+    nextEl: ".gallery-button-next",
+    prevEl: ".gallery-button-prev",
   },
 });
 
