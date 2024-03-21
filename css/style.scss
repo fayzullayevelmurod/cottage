@@ -250,6 +250,7 @@ header {
     .accordion_bg {
         width: 100%;
         height: 100%;
+        // object-fit: cover;
         left: 0;
         top: 0;
     }
@@ -640,6 +641,19 @@ header {
            }
         }
     }
+
+    .gallery,
+    .comment {
+        .swiper {
+            // .prev {
+            //     left: -10px;
+            // }
+
+            // .next {
+            //     right: -10px;
+            // }
+        }
+    }
     
     header {
         padding-top: 25px;
@@ -713,6 +727,11 @@ header {
 
     .accordion_main {
 
+        // background-image: url('../images/accordion_bg.webp');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+
         .accordion-item-header {
             font-size: 18px;
             padding: 17px 20px;
@@ -734,6 +753,8 @@ header {
     }
 
     .cards {
+        padding: 50px 0 10px 0;
+
         .main_container {
             display: none;
         }
@@ -752,6 +773,7 @@ header {
     }
 
     .comment {
+        padding: 200px 0 150px 0;
 
         .comment_bg {
             object-fit: cover;
@@ -789,6 +811,8 @@ header {
     }
 
     .gallery {
+        padding: 40px 0 10px 0;
+
         .main_container {
             .gallery_card {
                 display: none;
@@ -900,6 +924,10 @@ header {
             width: 100%;
             display: block;
         }
+    }
+
+    .comment {
+        padding: 150px 0;
     }
 
     .home_under {
