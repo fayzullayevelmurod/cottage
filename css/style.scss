@@ -336,6 +336,8 @@ header {
     }
 
     .img_card {
+        max-width: 400px;
+        margin: 0 auto;
         gap: 20px;
 
         h6 {
@@ -383,35 +385,40 @@ header {
         align-items: center;
         gap: 30px;
 
-        .comment_card {
-            min-height: 450px;
-            flex: 1;
-            display: flex;
-            justify-content: space-between;
-            @include flex-column();
-            padding: 60px 30px 50px 30px;
-            border-radius: 8px;
-            background-color: rgb(255, 255, 255);
-            box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.21);
-        }
+    }
 
-        .comment_card_center {
-            margin-top: 100px;
-        }
+    .commentSwiper {
+        display: none;
+    }
 
-        p {
-            font-size: 24px;
-            color: rgb(0, 1, 1);
-            font-weight: bold;
-            line-height: 1.5;
-        }
+    .comment_card {
+        min-height: 450px;
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        @include flex-column();
+        padding: 60px 30px 50px 30px;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.21);
+    }
 
-        h6 {
-            font-size: 24px;
-            color: rgb(35, 114, 187);
-            font-weight: bold;
-            line-height: 1.2;
-        }
+    .comment_card_center {
+        margin-top: 100px;
+    }
+
+    p {
+        font-size: 24px;
+        color: rgb(0, 1, 1);
+        font-weight: bold;
+        line-height: 1.5;
+    }
+
+    h6 {
+        font-size: 24px;
+        color: rgb(35, 114, 187);
+        font-weight: bold;
+        line-height: 1.2;
     }
 }
 // comment
@@ -696,6 +703,47 @@ header {
             .img_card_center {
                 padding-top: 0;
             }
+
+            h6 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .comment {
+
+        .comment_bg {
+            object-fit: cover;
+        }
+
+        .commentSwiper {
+            display: block;
+        }
+
+        .comment_cards {
+            display: none;
+        }
+
+        h3 {
+            font-size: 36px;
+            margin-bottom: 60px;
+        }
+
+        .comment_card_center {
+            margin-top: 0;
+        }
+
+        .comment_card {
+            padding: 30px 15px;
+            min-height: 250px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        h6 {
+            font-size: 16px;
         }
     }
 

@@ -264,6 +264,8 @@ header .header_contact svg {
   align-items: center;
 }
 .cards .img_card {
+  max-width: 400px;
+  margin: 0 auto;
   gap: 20px;
 }
 .cards .img_card h6 {
@@ -302,7 +304,10 @@ header .header_contact svg {
   align-items: center;
   gap: 30px;
 }
-.comment .comment_cards .comment_card {
+.comment .commentSwiper {
+  display: none;
+}
+.comment .comment_card {
   min-height: 450px;
   flex: 1;
   display: flex;
@@ -313,16 +318,16 @@ header .header_contact svg {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.21);
 }
-.comment .comment_cards .comment_card_center {
+.comment .comment_card_center {
   margin-top: 100px;
 }
-.comment .comment_cards p {
+.comment p {
   font-size: 24px;
   color: rgb(0, 1, 1);
   font-weight: bold;
   line-height: 1.5;
 }
-.comment .comment_cards h6 {
+.comment h6 {
   font-size: 24px;
   color: rgb(35, 114, 187);
   font-weight: bold;
@@ -549,6 +554,36 @@ header .header_contact svg {
   }
   .cards .cardsSwiper .img_card_center {
     padding-top: 0;
+  }
+  .cards .cardsSwiper h6 {
+    font-size: 20px;
+  }
+  .comment .comment_bg {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .comment .commentSwiper {
+    display: block;
+  }
+  .comment .comment_cards {
+    display: none;
+  }
+  .comment h3 {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+  .comment .comment_card_center {
+    margin-top: 0;
+  }
+  .comment .comment_card {
+    padding: 30px 15px;
+    min-height: 250px;
+  }
+  .comment p {
+    font-size: 16px;
+  }
+  .comment h6 {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 400px) {

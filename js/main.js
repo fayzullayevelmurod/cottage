@@ -1,7 +1,16 @@
-var swiper = new Swiper(".cardsSwiper", {
+let swiper = new Swiper(".cardsSwiper", {
+  spaceBetween: 20,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".card-button-next",
+    prevEl: ".card-button-prev",
+  },
+});
+
+let swiper2 = new Swiper(".commentSwiper", {
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".comment-button-next",
+    prevEl: ".comment-button-prev",
   },
 });
 
