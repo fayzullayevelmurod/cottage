@@ -25,6 +25,20 @@ let swiper3 = new Swiper(".gallerySwiper", {
   },
 });
 
+let header_btn = document.querySelector('.header_btn')
+let main_modal = document.querySelector('.main_modal')
+let modal_bg = document.querySelector('.modal_bg')
+
+header_btn.addEventListener('click', () => {
+  main_modal.classList.add('active')
+  modal_bg.classList.add('active')
+})
+
+modal_bg.addEventListener('click', () => {
+  main_modal.classList.remove('active')
+  modal_bg.classList.remove('active')
+})
+
 
 // accordion
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
